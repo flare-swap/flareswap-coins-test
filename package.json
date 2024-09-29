@@ -1,0 +1,21 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.9"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-verify": "^2.0.9",
+    "@openzeppelin/contracts": "^5.0.2",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.2"
+  },
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "coston:deploy": "npx hardhat run scripts/deploy.js --network coston",
+    "coston2:deploy": "npx hardhat run scripts/deploy.js --network coston2",
+    "songbird:deploy": "npx hardhat run scripts/deploy.js --network songbird",
+    "flare:deploy": "npx hardhat run scripts/deploy.js --network flare"
+  }
+}
